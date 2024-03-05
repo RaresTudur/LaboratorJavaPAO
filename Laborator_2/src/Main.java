@@ -47,11 +47,15 @@ public class Main {
             System.out.println(c + " < " + b + " < " + a);
         }
         else {
-            System.out.println("Numerele sunt egale sau în altă ordine.");
+            System.out.println("Numerele sunt egale sau în alta ordine.");
         }
     }
     public static int fib(int n)
     {
+        if(n == 0)
+        {
+            return 0;
+        }
         if(n <= 2)
         {
             return 1;
