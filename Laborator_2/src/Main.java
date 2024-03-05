@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-//        div3();
+        div3();
         Scanner in = new Scanner(System.in);
-//        int x,y,z;
-//        x = in.nextInt();
-//        y = in.nextInt();
-//        z = in.nextInt();
-//        comp3(x,y,z);
+        int x,y,z;
+        x = in.nextInt();
+        y = in.nextInt();
+        z = in.nextInt();
+        comp3(x,y,z);
         int f = in.nextInt();
         System.out.println(fib(f-1));
     }
