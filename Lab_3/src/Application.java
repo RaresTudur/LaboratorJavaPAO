@@ -175,6 +175,12 @@ public class Application {
                     System.exit(0);
                 case "help":
                     System.out.println("Command received: help");
+                    System.out.println("Available operations:");
+                    System.out.println("create - Create a new student or professor");
+                    System.out.println("read   - Read details of a student or professor");
+                    System.out.println("update - Update details of a student or professor");
+                    System.out.println("delete - Delete a student or professor");
+                    System.out.println("quit   - Exit the application");
                     break;
             }
 
