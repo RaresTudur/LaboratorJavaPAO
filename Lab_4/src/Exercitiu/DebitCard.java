@@ -16,7 +16,7 @@ public record DebitCard(String nume_utilizator, int limitAmount) implements Bank
 
     @Override
     public void doTransaction(double amount) {
-        if(amount > limitAmount)
+        if(amount + spentAmount > limitAmount)
         {
             System.out.println("Not enough money");
         }
