@@ -1,6 +1,7 @@
 package Exercitiu;
 
-public record DebitCard(String nume_utilizator, int limitAmount) implements BankCard {
+public record DebitCard(String nume_utilizator, int limitAmount) implements BankCard
+{
     private static double spentAmount = 0;
 
     public DebitCard(String nume_utilizator, int limitAmount)
@@ -11,11 +12,13 @@ public record DebitCard(String nume_utilizator, int limitAmount) implements Bank
 
     public static void setSpentAmount(double spentAmount)
     {
+
         DebitCard.spentAmount = spentAmount;
     }
 
     @Override
-    public void doTransaction(double amount) {
+    public void doTransaction(double amount)
+    {
         if(amount + spentAmount > limitAmount)
         {
             System.out.println("Not enough money");
