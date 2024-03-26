@@ -21,6 +21,6 @@ public class Ex2_Regex
 
         StringBuilder sir_invers = new StringBuilder(sir);
         sir_invers.reverse();
-        System.out.println("TestExpresie + inversul: " + sir_invers.toString());
+        System.out.println("TestExpresie + inversul: " + sir_invers);
     }
 }
