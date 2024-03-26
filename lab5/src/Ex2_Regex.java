@@ -6,8 +6,7 @@ public class Ex2_Regex
         String sir = "TestExpresie";
         boolean hasOnlyUpperLower = Pattern.matches("^[a-zA-Z]+$", sir);
         System.out.println("Respecta sirul TestExpresie regula: "+ hasOnlyUpperLower);
-
-        String sir2 = "Ana are mere si pere!";
+        String sir2 ="Odata creat un sir de caractere cu continutul sau nu mai poate fi modificat." ;
         String[] cuvinte = sir2.split("\\s+");
         int indexMijloc = cuvinte.length / 2;
         if(cuvinte.length % 2 == 0)
