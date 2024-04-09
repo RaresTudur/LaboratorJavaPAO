@@ -15,10 +15,10 @@ public class Tranzactie extends ConversieCalculImpl implements Cloneable {
         this.refNmb = null;
     }
     @Override
-    public Tranzactie clone()
+    public Object clone()
     {
         try {
-            return (Tranzactie) super.clone();
+            return (Object) super.clone();
         } catch (CloneNotSupportedException e) {
             return null;
         }

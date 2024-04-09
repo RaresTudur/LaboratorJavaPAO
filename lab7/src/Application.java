@@ -20,8 +20,10 @@ public class Application
         lista_tranzactii.add(tranzactie3);
 
         //Exercitiul 1
-        Tranzactie stornareTranzactie2 = tranzactie2.clone();
+        Tranzactie stornareTranzactie2 = (Tranzactie)tranzactie2.clone();
+        stornareTranzactie2.setPayment((Payment) stornareTranzactie2.getPayment().clone());
         stornareTranzactie2.setAmount(-stornareTranzactie2.getAmount());
+        stornareTranzactie2.getPayment().setAmount(-stornareTranzactie2.getPayment().getAmount());
         stornareTranzactie2.setRefNmb(tranzactie2.getId());
 
         System.out.println("Tranzactie initiala: ");

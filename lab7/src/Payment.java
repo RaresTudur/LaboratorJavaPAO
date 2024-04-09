@@ -1,4 +1,4 @@
-public class Payment
+public class Payment implements Cloneable
 {
     private double amount;
     private Currency currency;
@@ -51,6 +51,15 @@ public class Payment
     public void setPurpose(String purpose)
     {
         this.purpose = purpose;
+    }
+    @Override
+    public Object clone()
+    {
+        try {
+            return (Object) super.clone();
+        } catch (CloneNotSupportedException e) {
+            return null;
+        }
     }
 
     @Override
