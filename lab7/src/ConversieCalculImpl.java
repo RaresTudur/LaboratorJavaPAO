@@ -1,4 +1,4 @@
-public class ConversieCurrencyImpl implements ConversieCalcul {
+public class ConversieCalculImpl implements ConversieCalcul {
     @Override
     public double conversieValutaToEur(double amount, Currency currency)
     {

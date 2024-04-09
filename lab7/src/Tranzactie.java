@@ -1,4 +1,4 @@
-public class Tranzactie extends ConversieCurrencyImpl implements Cloneable {
+public class Tranzactie extends ConversieCalculImpl implements Cloneable {
     private int id;
     private Payment payment;
     private Currency currency;
@@ -14,7 +14,7 @@ public class Tranzactie extends ConversieCurrencyImpl implements Cloneable {
         this.amount = conversieValutaToEur(payment.getAmount(), payment.getCurrency());
         this.refNmb = null;
     }
-
+    @Override
     public Tranzactie clone()
     {
         try {
