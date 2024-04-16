@@ -1,0 +1,4 @@
+Alexandru;Alex;20;1000.0;Ron
+Alexandru;Alex;20;2000.0;Euro
+Mihai;Andrei;20;1000.0;Usd
+Mihai;George;25;1200.0;Gbp
