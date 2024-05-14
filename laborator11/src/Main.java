@@ -15,7 +15,7 @@ public class Main
                 try
                 {
                     Thread.sleep(100);
-                    StoredObject storedObject = new StoredObject("testobject" + i + 2);
+                    StoredObject storedObject = new StoredObject("testobject" + i);
                     cache.addToCache(i, storedObject);
                 } catch (InterruptedException e)
                 {
