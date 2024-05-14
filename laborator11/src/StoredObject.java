@@ -8,7 +8,7 @@ public class StoredObject {
     public StoredObject(Object myInfo)
     {
         this.myInfo = myInfo;
-        this.expirationTime = new Timestamp(System.currentTimeMillis() + 40);
+        this.expirationTime = new Timestamp(System.currentTimeMillis() + 300);
         this.expired = false;
     }
 
@@ -19,13 +19,14 @@ public class StoredObject {
 
     public boolean isExpired()
     {
-        if (!expired && expirationTime.before(new Timestamp(System.currentTimeMillis()))) {
-            expired = true;
-        }
         return expired;
     }
     public Timestamp getExpirationTime()
     {
         return expirationTime;
+    }
+    public void setExpired()
+    {
+        expired = true;
     }
 }
